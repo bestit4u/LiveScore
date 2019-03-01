@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_220"
+            android:background="@drawable/stadiumbg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_10"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgBack"
+                        android:layout_width="@dimen/space_30"
+                        android:layout_height="@dimen/space_30"
+                        android:background="@drawable/arrowbackgwhite" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/space_1"
+                        android:layout_weight="1"
+                        android:background="@null" />
+
+                    <ToggleButton
+                        android:id="@+id/toggleFollow"
+                        android:layout_width="@dimen/space_100"
+                        android:layout_height="@dimen/space_30"
+                        android:layout_gravity="center"
+                        android:background="@drawable/back_toggle_follow"
+                        android:gravity="center"
+                        android:textOff=""
+                        android:textOn="" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtProfileName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Preben EJKjaer"
+                    android:textColor="@color/clr_white"
+                    android:textSize="@dimen/space_15" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_80"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/space_60"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/space_1"
+                            android:layout_weight="1" />
+
+                        <LinearLayout
+                            android:id="@+id/lnFollowers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/space_20"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center|bottom"
+                                android:text="@string/followers"
+                                android:textColor="@color/clr_white" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/space_5" />
+
+                            <TextView
+                                android:id="@+id/txtFollowers"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center|top"
+                                android:text=""
+                                android:textColor="@color/clr_white" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="@dimen/space_70"
+                        android:layout_height="@dimen/space_70">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imgProfile"
+                            android:layout_width="@dimen/space_60"
+                            android:layout_height="@dimen/space_60"
+                            android:layout_centerHorizontal="true"
+                            app:civ_border_color="#FF000000"
+                            app:civ_border_width="@dimen/space_1" />
+                        <ImageView
+                            android:id="@+id/imgExpertThisMonth"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:src="@drawable/expert"
+                            android:scaleType="fitXY"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/space_60"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/lnFollowing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/space_20"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center|bottom"
+                                android:text="@string/following"
+                                android:textColor="@color/clr_white" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/space_5" />
+
+                            <TextView
+                                android:id="@+id/txtFollowing"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center|top"
+                                android:text=""
+                                android:textColor="@color/clr_white" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/space_1"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_40"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/space_10"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/space_140"
+                    android:layout_height="@dimen/space_30"
+                    android:layout_centerInParent="true"
+                    android:background="#d01a2423">
+
+                    <TextView
+                        android:id="@+id/txtPercent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/space_10"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/clr_green" />
+
+                    <TextView
+                        android:id="@+id/txtPoint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/clr_green" />
+
+                    <ImageView
+                        android:layout_width="@dimen/space_15"
+                        android:layout_height="@dimen/space_20"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/space_10"
+                        android:layout_marginTop="@dimen/space_5"
+                        android:src="@drawable/statsgreen" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtBio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_10"
+            android:textColor="@color/clr_black"
+            android:textSize="@dimen/space_10" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:layout_marginTop="@dimen/space_5"
+            android:background="@color/clr_green" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/RnCurrentTip"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txtCurrentTips"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/current_tips"
+                    android:textColor="@color/clr_black"
+                    android:textSize="@dimen/space_15"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/viewCurrentTipBorder"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_3"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:layout_marginRight="@dimen/space_20"
+                    android:background="@color/clr_green" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RnEndTip"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txtEndTips"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/ended_tips"
+                    android:textColor="@color/clr_black"
+                    android:textSize="@dimen/space_15"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/viewEndTipBorder"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_3"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:layout_marginRight="@dimen/space_20"
+                    android:background="@color/clr_green" />
+            </RelativeLayout>
+        </LinearLayout>
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+            <LinearLayout
+                android:id="@+id/lnContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:id="@+id/lnNoTips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/space_50"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtNoTips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="There is no any tips yet" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lnItem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_70"
+        android:background="@color/clr_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/imgProfile"
+                    android:layout_width="@dimen/space_50"
+                    android:layout_height="@dimen/space_50"
+                    android:layout_gravity="center"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="@dimen/space_1" />
+
+                <TextView
+                    android:id="@+id/txtUserName"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:textColor="@color/clr_black"
+                    android:textSize="@dimen/space_10" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtPercent"
+                android:layout_width="@dimen/space_30"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/clr_green"
+                android:textSize="@dimen/space_10" />
+
+            <TextView
+                android:id="@+id/txtPoint"
+                android:layout_width="@dimen/space_50"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_10"
+                android:gravity="center"
+                android:textColor="@color/clr_green"
+                android:textSize="@dimen/space_10" />
+
+            <ToggleButton
+                android:id="@+id/toggleFollow"
+                android:layout_width="@dimen/space_100"
+                android:layout_height="@dimen/space_30"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/space_10"
+                android:background="@drawable/back_toggle_follow"
+                android:gravity="center"
+                android:textOff=""
+                android:textOn="" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:background="@color/clr_green" />
+    </LinearLayout>
+</LinearLayout>

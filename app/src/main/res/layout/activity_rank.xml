@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_white"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_20"
+        android:text="Rank"
+        android:textColor="@color/clr_green"
+        android:textSize="@dimen/space_20"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:layout_marginTop="@dimen/space_10"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/RnThisMonth"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/txtThisMonth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/this_month"
+                android:textColor="@color/clr_black"
+                android:textSize="@dimen/space_15"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/viewThisMonthBorder"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_3"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                android:background="@color/clr_green" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RnLastMonth"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/txtLastMonth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/last_month"
+                android:textColor="@color/clr_black"
+                android:textSize="@dimen/space_15"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/viewLastMonthBorder"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_3"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                android:background="@color/clr_green" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_20"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="@dimen/space_60"
+            android:layout_height="match_parent"
+            android:text="POS"
+            android:textStyle="bold"
+            android:textSize="@dimen/space_10"
+            android:textColor="@color/clr_green"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/player1"
+            android:textStyle="bold"
+            android:textSize="@dimen/space_10"
+            android:textColor="@color/clr_green"
+            android:paddingLeft="@dimen/space_15"/>
+        <TextView
+            android:layout_width="@dimen/space_30"
+            android:layout_height="match_parent"
+            android:text="@string/w"
+            android:textStyle="bold"
+            android:textSize="@dimen/space_10"
+            android:textColor="@color/clr_green"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="@dimen/space_30"
+            android:layout_height="match_parent"
+            android:text="@string/l"
+            android:textStyle="bold"
+            android:textSize="@dimen/space_10"
+            android:textColor="@color/clr_green"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="@dimen/space_30"
+            android:layout_height="match_parent"
+            android:text="HR"
+            android:textStyle="bold"
+            android:textSize="@dimen/space_10"
+            android:textColor="@color/clr_green"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="@dimen/space_50"
+            android:layout_height="match_parent"
+            android:text="P"
+            android:textColor="@color/clr_green"
+            android:textStyle="bold"
+            android:textSize="@dimen/space_10"
+            android:gravity="center"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_weight="1">
+        <LinearLayout
+            android:id="@+id/lnContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/layout_foot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

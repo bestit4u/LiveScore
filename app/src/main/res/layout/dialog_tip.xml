@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/space_10"
+    android:layout_marginRight="@dimen/space_10"
+    android:background="@drawable/button_light_fill_back">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_10"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="@dimen/space_20"
+            android:layout_height="@dimen/space_20"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_close_guide"/>
+        <TextView
+            android:id="@+id/txtOddStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_10"
+            android:textColor="@color/clr_white"
+            android:text="sdfsdfs"
+            android:gravity="center|left"
+            android:textSize="@dimen/space_15"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtMarketStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_40"
+        android:layout_marginRight="@dimen/space_10"
+        android:textColor="@color/clr_white"
+        android:textSize="@dimen/space_15" />
+    <TextView
+        android:id="@+id/txtMatchName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_marginLeft="@dimen/space_40"
+        android:layout_marginRight="@dimen/space_10"
+        android:textColor="@color/clr_white"
+        android:textSize="@dimen/space_15" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_10"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/space_40"
+            android:layout_weight="40"
+            android:background="@drawable/button_fill_white_back">
+
+            <EditText
+                android:id="@+id/edtAmount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/space_5"
+                android:gravity="center"
+                android:hint="Amount"
+                android:background="@null"
+                android:inputType="number"
+                android:textColor="@color/clr_green"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/space_10"
+            android:layout_height="@dimen/space_3"></LinearLayout>
+
+        <Button
+            android:id="@+id/btnPlaceTip"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/space_40"
+            android:layout_weight="40"
+            android:background="@drawable/button_fill_back"
+            android:paddingBottom="@dimen/space_5"
+            android:paddingTop="@dimen/space_5"
+            android:text="Place TIP"
+            android:textColor="@color/clr_white" />
+    </LinearLayout>
+</LinearLayout>

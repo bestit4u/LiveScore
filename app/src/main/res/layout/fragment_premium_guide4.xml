@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Live Sessions"
+            android:textColor="@color/clr_white"
+            android:textSize="@dimen/space_15"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Live session is created for players who loves live betting. Join the always open live session or keep an eye open for the live sessions created by the experts. Expert Live Session can be opened at any time by an expert and the expert will make live tips on one or several matches."
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:textColor="@color/clr_white"
+            android:layout_marginTop="@dimen/space_20"
+            android:textSize="@dimen/space_15"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</RelativeLayout>

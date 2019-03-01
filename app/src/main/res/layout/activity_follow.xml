@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_30"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_10"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/space_20"
+            android:layout_height="@dimen/space_20"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/space_10"
+            android:scaleType="fitXY"
+            android:src="@drawable/arrowbackgrey" />
+        <EditText
+            android:id="@+id/edtSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_fill__grey_back"
+            android:gravity="center"
+            android:singleLine="true"
+            android:hint="@string/search" />
+
+        <ImageView
+            android:id="@+id/imgSearch"
+            android:layout_width="@dimen/space_20"
+            android:layout_height="@dimen/space_20"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/space_10"
+            android:scaleType="fitXY"
+            android:src="@drawable/search" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:layout_marginTop="@dimen/space_10"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/RnFollowers"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/txtFollowers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/followers"
+                android:textColor="@color/clr_black"
+                android:textSize="@dimen/space_15"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/viewFollowersBorder"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_3"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                android:background="@color/clr_green" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RnFollowing"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/txtFollowing"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/following"
+                android:textColor="@color/clr_black"
+                android:textSize="@dimen/space_15"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/viewFollowingBorder"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_3"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                android:background="@color/clr_green" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lnHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_20"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/space_10"
+            android:text="@string/player"
+            android:textStyle="bold"
+            android:textSize="@dimen/space_10"
+            android:textColor="@color/clr_green"
+            android:paddingLeft="@dimen/space_15"/>
+
+        <TextView
+            android:layout_width="@dimen/space_30"
+            android:layout_height="match_parent"
+            android:text="HR"
+            android:textStyle="bold"
+            android:textSize="@dimen/space_10"
+            android:textColor="@color/clr_green"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="@dimen/space_50"
+            android:layout_height="match_parent"
+            android:text="P"
+            android:textStyle="bold"
+            android:textSize="@dimen/space_10"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:textColor="@color/clr_green"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="@dimen/space_100"
+            android:layout_height="match_parent"
+            android:textColor="@color/clr_green"
+            android:textStyle="bold"
+            android:textSize="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:gravity="center"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/space_10">
+            <LinearLayout
+                android:id="@+id/lnContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:id="@+id/lnNoFollow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/you_not_follow"
+                android:textColor="@color/clr_grey"
+                android:gravity="center"/>
+            <LinearLayout
+                android:id="@+id/lnFindFollow"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/space_40"
+                android:background="@drawable/button_empty_back"
+                android:paddingLeft="@dimen/space_10"
+                android:layout_marginTop="@dimen/space_10"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:paddingRight="@dimen/space_10"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/find_someone"
+                    android:textColor="@color/clr_green"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/space_15"/>
+                <ImageView
+                    android:layout_width="@dimen/space_20"
+                    android:layout_height="@dimen/space_20"
+                    android:src="@drawable/search"
+                    android:scaleType="fitXY"
+                    android:layout_marginLeft="@dimen/space_10"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

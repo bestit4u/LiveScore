@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_white">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_200"
+        android:background="@drawable/greenbg"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="@dimen/space_30"
+        android:layout_height="@dimen/space_30"
+        android:layout_margin="@dimen/space_10"
+        android:src="@drawable/arrowbackgwhite" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="@dimen/space_70"
+            android:layout_height="@dimen/space_70"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space_30"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10"
+            android:gravity="center"
+            android:text="Account Activation"
+            android:textColor="@color/clr_white"
+            android:textSize="@dimen/space_20" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10"
+            android:gravity="center"
+            android:text="You may check your spam mail"
+            android:textColor="@color/clr_white"
+            android:textSize="@dimen/space_12" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_fill_white_back"
+            android:layout_marginLeft="@dimen/space_20"
+            android:layout_marginRight="@dimen/space_20"
+            android:layout_marginTop="@dimen/space_30">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_20"
+                android:background="@drawable/button_empty_back"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/lnCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_40"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:layout_marginBottom="@dimen/space_40"
+                    android:orientation="horizontal"
+                    android:background="@drawable/button_empty_back">
+                    <EditText
+                        android:id="@+id/edtCode"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:hint="Code - 4 digits - Check e-mail"
+                        android:background="@null"
+                        android:layout_marginTop="@dimen/space_3"
+                        android:layout_marginBottom="@dimen/space_3"
+                        android:layout_marginLeft="@dimen/space_10"
+                        android:singleLine="true"
+                        android:layout_weight="1"
+                        android:textColorHint="@color/clr_grey"/>
+                    <ImageView
+                        android:id="@+id/imgCodeCheck"
+                        android:layout_width="@dimen/space_20"
+                        android:layout_height="@dimen/space_20"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/space_10"/>
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnActivate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_40"
+                android:layout_marginTop="@dimen/space_70"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                android:textColor="@color/clr_green"
+                android:background="@drawable/button_empty_back"
+                android:text="Activate account"
+                android:textSize="@dimen/space_20"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

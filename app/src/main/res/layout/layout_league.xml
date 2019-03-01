@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/lnItem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_150"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_30"
+            android:orientation="horizontal"
+            android:background="@color/clr_green">
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="@dimen/space_30"
+                android:layout_height="@dimen/space_30"
+                android:src="@drawable/arrowbackgwhite"
+                android:padding="@dimen/space_5"
+                android:scaleType="fitXY"
+                />
+            <TextView
+                android:id="@+id/txtLeagueName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_30"
+                android:paddingLeft="@dimen/space_10"
+                android:text="Spain Laliga"
+                android:textSize="@dimen/space_15"
+                android:textColor="@color/clr_white"
+                android:background="@color/clr_green"
+                android:gravity="center|left"/>
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:background="@color/clr_white"
+            android:scrollbars="none"
+            android:layout_height="@dimen/space_120">
+            <LinearLayout
+                android:id="@+id/lnMatchContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+</LinearLayout>

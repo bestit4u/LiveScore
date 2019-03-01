@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:background="@color/clr_white"
+    android:orientation="vertical">
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/space_1"
+		android:background="@color/clr_green" />
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="5"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="50"
+			android:orientation="vertical">
+			<RelativeLayout
+				android:id="@+id/RnCalendar"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/space_50">
+				<ImageView
+					android:layout_width="@dimen/space_40"
+					android:layout_height="@dimen/space_40"
+					android:src="@drawable/menu_calendar"
+					android:scaleType="fitXY"
+					android:layout_centerInParent="true"/>
+			</RelativeLayout>
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="50"
+			android:orientation="vertical">
+
+			<RelativeLayout
+				android:id="@+id/RnFeed"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/space_50">
+
+				<ImageView
+					android:layout_width="@dimen/space_40"
+					android:layout_height="@dimen/space_40"
+					android:layout_centerInParent="true"
+					android:scaleType="fitXY"
+					android:src="@drawable/menu_feed" />
+			</RelativeLayout>
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="50"
+			android:orientation="vertical">
+
+			<RelativeLayout
+				android:id="@+id/RnTip"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/space_50">
+				<ImageView
+					android:layout_width="@dimen/space_40"
+					android:layout_height="@dimen/space_40"
+					android:src="@drawable/menu_createtip"
+					android:scaleType="fitXY"
+					android:layout_centerVertical="true"
+					android:layout_centerHorizontal="true" />
+			</RelativeLayout>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="50"
+			android:orientation="vertical">
+
+			<RelativeLayout
+				android:id="@+id/RnProfile"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/space_50">
+				<ImageView
+					android:layout_width="@dimen/space_40"
+					android:layout_height="@dimen/space_40"
+					android:src="@drawable/menu_profile"
+					android:scaleType="fitXY"
+					android:layout_centerInParent="true"/>
+			</RelativeLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

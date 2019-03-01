@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lnItem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_60"
+        android:background="@color/clr_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/space_60"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtPosition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textSize="@dimen/space_10"
+                    android:textColor="@color/clr_black"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="@dimen/space_5"
+                    android:layout_height="@dimen/space_10"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:visibility="gone"
+                    android:src="@drawable/green_long_arrow_up" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/space_10" >
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/imgProfile"
+                    android:layout_width="@dimen/space_50"
+                    android:layout_height="@dimen/space_50"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="@dimen/space_1"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="sdfsdf"
+                    android:gravity="center|left"
+                    android:textSize="@dimen/space_10"
+                    android:textColor="@color/clr_black"
+                    android:layout_marginLeft="@dimen/space_5"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtWinnerCount"
+                android:layout_width="@dimen/space_30"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="99"
+                android:textSize="@dimen/space_10"
+                android:textColor="@color/clr_black" />
+
+            <TextView
+                android:id="@+id/txtLosesCount"
+                android:layout_width="@dimen/space_30"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="99"
+                android:textSize="@dimen/space_10"
+                android:textColor="@color/clr_black" />
+
+            <TextView
+                android:id="@+id/txtPercent"
+                android:layout_width="@dimen/space_30"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="99%"
+                android:textSize="@dimen/space_10"
+                android:textColor="@color/clr_black"/>
+
+            <TextView
+                android:id="@+id/txtPoint"
+                android:layout_width="@dimen/space_50"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="@dimen/space_10"
+                android:text="+9999"
+                android:textColor="@color/clr_black" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:background="@color/clr_green" />
+    </LinearLayout>
+</LinearLayout>

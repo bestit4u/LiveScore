@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/space_30"
+            android:layout_height="@dimen/space_30"
+            android:layout_gravity="center"
+            android:src="@drawable/arrowbackgrey" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/experts"
+            android:textColor="@color/clr_green"
+            android:textSize="@dimen/space_20"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/space_20"
+            android:layout_height="@dimen/space_20"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:background="@drawable/stadiumbg"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/space_20">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What is an expert?"
+            android:textStyle="bold"
+            android:textSize="@dimen/space_20"
+            android:textColor="@color/clr_green"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_5"
+            android:text="Experts have proven their excellent sport tipping skill over a longer period of time and are thoroughly selected by Tipya."
+            android:textColor="@color/clr_black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_5"
+            android:textColor="@color/clr_black"
+            android:text="Experts do their very best to provide good sport tips for you to play and are paid to provide tips in order to get a very high standard."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Expert tips can only be viewed by Premium users!"
+            android:textColor="@color/clr_green"
+            android:layout_marginTop="@dimen/space_5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Can I become an expert?"
+            android:layout_marginTop="@dimen/space_20"
+            android:textStyle="bold"
+            android:textSize="@dimen/space_20"
+            android:textColor="@color/clr_green"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_5"
+            android:text="Everyone have the chance to become an expert!\nTo get selected you have to:"
+            android:textColor="@color/clr_black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_5"
+            android:textColor="@color/clr_black"
+            android:text="Be one of the top players on the ranking list.\nAchive a hitrate above 53% and a nice profit."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="So keep on tipping and do your best. Maybe you will become expert one day and start earning extra cash!"
+            android:textColor="@color/clr_black"
+            android:layout_marginTop="@dimen/space_5"/>
+    </LinearLayout>
+</LinearLayout>

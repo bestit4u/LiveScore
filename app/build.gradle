@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.diretta.livescore"
+        manifestPlaceholders = [
+                onesignal_app_id               : 'a7e11cee-3770-44ae-b45c-9b1c1f74a982',
+                // Project number pulled from dashboard, local value is ignored.
+                onesignal_google_project_number: '264746111490'
+        ]
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 5
+        versionName "5.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+    dexOptions {
+        javaMaxHeapSize "2g"
+    }
+
+    lintOptions {
+        checkReleaseBuilds false;
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.google.android.gms:play-services:11.0.4'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    implementation files('libs/httpclient-4.5.1.jar')
+    implementation files('libs/httpcore-4.4.3.jar')
+    //compile files('libs/httpmime-4.5.1.jar')
+    implementation files('libs/universal-image-loader-1.9.3.jar')
+    implementation 'com.android.support:multidex:1.0.0'
+
+    implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    implementation 'com.prolificinteractive:material-calendarview:1.4.3'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.8'
+
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    //compile 'com.google.android.gms:play-services:11.8.0'
+    implementation 'com.facebook.android:facebook-login:[4,5)'
+    //compile 'com.google.android.gms:play-services-ads:15.0.0'
+    //compile 'com.onesignal:OneSignal:[3.9.1, 3.99.99]'
+    implementation 'com.onesignal:OneSignal:3.+@aar'
+    //implementation 'com.google.android.gms:play-services:+'
+}
